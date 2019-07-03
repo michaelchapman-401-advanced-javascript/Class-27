@@ -1,21 +1,42 @@
 import React from 'react';
 
+/**
+ * The Counter component which renders the counting mechanism and number
+ */
 class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = { count: 0 };
   }
 
+/**
+ * Increment count state
+ *
+ * @param {event} event object
+ * @public
+ */
   handleUp = e => {
     let count = this.state.count + 1;
     this.updateCounter(count);
   };
 
+/**
+ * Decrement count state
+ *
+ * @param {event} event object
+ * @public
+ */
   handleDown = e => {
     let count = this.state.count - 1;
     this.updateCounter(count);
   };
 
+/**
+ * Handes determining whether count is negative or positive and then creates and assigns those values to the polarity state
+ *
+ * @param {count}  integer
+ * @public
+ */
   updateCounter(count) {
     let polarity = '';
     if (count > 0) {
