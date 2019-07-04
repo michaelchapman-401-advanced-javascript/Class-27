@@ -5,39 +5,41 @@ import React from 'react';
  */
 class Counter extends React.Component {
   constructor(props) {
+    // Super is a function which technically is the constructor to the class we are extending
     super(props);
     this.state = { count: 0 };
   }
 
-/**
+  /**
  * Increment count state
  *
  * @param {event} event object
  * @public
  */
-  handleUp = e => {
-    let count = this.state.count + 1;
+  handleUp = () => {
+    const count = this.state.count + 1;
     this.updateCounter(count);
   };
 
-/**
+  /**
  * Decrement count state
  *
  * @param {event} event object
  * @public
  */
-  handleDown = e => {
-    let count = this.state.count - 1;
+  handleDown = () => {
+    const count = this.state.count - 1;
     this.updateCounter(count);
   };
 
-/**
- * Handes determining whether count is negative or positive and then creates and assigns those values to the polarity state
+  /**
+ * Handes determining whether count is negative or positive and then creates and assigns 
+ * those values to the polarity state
  *
  * @param {count}  integer
  * @public
  */
-  updateCounter(count) {
+  updateCounter = (count) => {
     let polarity = '';
     if (count > 0) {
       polarity = 'positive';
@@ -45,10 +47,10 @@ class Counter extends React.Component {
       polarity = 'negative';
     }
     this.setState({ count, polarity });
-  }
+  };
 
   render() {
-    let classes = ['count', this.state.polarity].join(' ');
+    const classes = ['count', this.state.polarity].join(' ');
     return (
       <section className="counter">
         <a href="#" className="down clicker" onClick={this.handleDown}>

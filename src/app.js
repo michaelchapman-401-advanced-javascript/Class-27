@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './components/header/header.js';
-import Footer from './components/footer/footer.js';
-import Counter from './components/counter/counter.js';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import Counter from './components/counter/counter';
 
 /**
  * The App component which handles rendering all of the created components
