@@ -1,4 +1,5 @@
 import React from 'react';
+import './counter.scss';
 
 /**
  * The Counter component which renders the counting mechanism and number

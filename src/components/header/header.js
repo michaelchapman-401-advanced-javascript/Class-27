@@ -1,4 +1,5 @@
 import React from 'react';
+import './header.scss';
 
 /**
  * The Header component which renders a simple Header

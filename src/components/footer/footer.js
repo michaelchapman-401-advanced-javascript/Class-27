@@ -1,4 +1,5 @@
 import React from 'react';
+import './footer.scss';
 
 /**
  * The Footer component which renders a simple footer
