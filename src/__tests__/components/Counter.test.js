@@ -35,7 +35,7 @@ describe('Counter module', () => {
 
 describe('<Counter/> snapshot test', () => {
   it('Renders correctly', () => {
-    const component = renderer.create('<Counter/>');
+    const component = renderer.create(<Counter />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -45,7 +45,7 @@ describe('<Counter/> snapshot test', () => {
     const wrapper = mount(<Counter />);
     
     wrapper.find('.up').simulate('click');
-    const component = renderer.create('<Counter/>');
+    const component = renderer.create(<Counter />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -56,7 +56,7 @@ describe('<Counter/> snapshot test', () => {
 
     wrapper.find('.down').simulate('click');
 
-    const component = renderer.create('<Counter/>');
+    const component = renderer.create(<Counter />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
