@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter/> snapshot test Renders correctly (Down) 1`] = `
+<section
+  className="counter"
+>
+  <a
+    className="down clicker"
+    href="#"
+    onClick={[Function]}
+  >
+    -
+  </a>
+  <span
+    className="count "
+  >
+    0
+  </span>
+  <a
+    className="up clicker"
+    href="#"
+    onClick={[Function]}
+  >
+    +
+  </a>
+</section>
+`;
+
+exports[`<Counter/> snapshot test Renders correctly (Up) 1`] = `
+<section
+  className="counter"
+>
+  <a
+    className="down clicker"
+    href="#"
+    onClick={[Function]}
+  >
+    -
+  </a>
+  <span
+    className="count "
+  >
+    0
+  </span>
+  <a
+    className="up clicker"
+    href="#"
+    onClick={[Function]}
+  >
+    +
+  </a>
+</section>
+`;
+
+exports[`<Counter/> snapshot test Renders correctly 1`] = `
+<section
+  className="counter"
+>
+  <a
+    className="down clicker"
+    href="#"
+    onClick={[Function]}
+  >
+    -
+  </a>
+  <span
+    className="count "
+  >
+    0
+  </span>
+  <a
+    className="up clicker"
+    href="#"
+    onClick={[Function]}
+  >
+    +
+  </a>
+</section>
+`;
