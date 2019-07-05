@@ -7,8 +7,8 @@ Michael Chapman
 ### Links and Resources
 * [submission PR](https://github.com/michaelchapman-401-advanced-javascript/Class-27/pull/1)
 * [travis](https://travis-ci.org/michaelchapman-401-advanced-javascript/Class-27)
-* [AWS S3]()
-* [Netlify]()
+* [AWS S3](http://lab-27-counter.s3-website-us-west-2.amazonaws.com)
+* [Netlify](https://epic-boyd-4346ee.netlify.com)
 
 #### Documentation
 * [UML-Data-Flow](./assets/UML.jpg)
